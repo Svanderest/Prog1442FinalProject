@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="en-us" Name="ExampleAppCommandSet_en-us">
+    <CommandPrefix> Card Game, </CommandPrefix>
+    <Example>Play the two of clubs</Example>
+
+    <Command Name="Play">
+      <Example> play the two of clubs  </Example>
+      <ListenFor> play [the] {value} of {suit} </ListenFor>
+      <Feedback> playing a card </Feedback>
+      <Navigate/>
+    </Command>
+
+    <PhraseList Label="value">
+      <Item>Two</Item>
+      <Item>Three</Item>
+      <Item>Four</Item>
+      <Item>Five</Item>
+      <Item>Six</Item>
+      <Item>Seven</Item>
+      <Item>Eight</Item>
+      <Item>Nine</Item>
+      <Item>Ten</Item>
+      <Item>Jack</Item>
+      <Item>Queen</Item>
+      <Item>King</Item>
+      <Item>Ace</Item>
+    </PhraseList>
+
+    <PhraseList Label="suit">
+      <Item>Hearts</Item>
+      <Item>Clubs</Item>
+      <Item>Diamonds</Item>
+      <Item>Spades</Item>
+    </PhraseList>
+
+  </CommandSet>
+
+</VoiceCommands>
